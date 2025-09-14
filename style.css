@@ -24,17 +24,13 @@
 
 .container {
     display: flex;
-    border: 3px solid rgb(242, 8, 8);
+    border: 10px solid mistyrose;
     height: 100vh;
     flex-wrap: wrap;
+    align-content: flex-start;
 }
 
 .box{
-    width: 300px;
-    flex:1;
+    width: 33.33%;
 }
 
-.box1{
-    width: 300px;
-    flex:5;
-}
