@@ -23,8 +23,18 @@
 
 
 .container {
-    border: 3px solid rgb(242, 8, 8);
     display: flex;
+    border: 3px solid rgb(242, 8, 8);
     height: 100vh;
-    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.box{
+    width: 300px;
+    flex:1;
+}
+
+.box1{
+    width: 300px;
+    flex:5;
 }
