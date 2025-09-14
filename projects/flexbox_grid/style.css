@@ -1,0 +1,26 @@
+.box {
+    color: white;
+    font-size: 100px;
+    text-align: center;
+    text-shadow: 4px 4px 0 grey;
+    padding: 10px;
+}
+
+.box1 {background: greenyellow;}
+.box2 {background: blue;}
+.box3 {background: pink;}
+.box4 {background: purple;}
+.box5 {background: yellow;}
+.box6 {background: turquoise}
+.box7 {background: orange;}
+.box8 {background: red;}
+.box9 {background: lightseagreen;}
+.box10 {background: green;}
+
+.container {
+    display:flex;
+    border: 10px solid goldenrod;
+    height: 100vh;
+    flex-direction: row;
+}
+
