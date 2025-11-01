@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+<ul id="todoList">
+  <li>Tvätta</li>
+  <li>Handla</li>
+  <li>Plugga JS</li>
+</ul>
+<style>
+  .done {
+    text-decoration: line-through;
+    color: gray;
+  }
+</style>
+<script>
+  const list = document.getElementById('todoList');
+
+  // 🔹 Lägg bara en lyssnare på UL, inte på varje LI
+  list.addEventListener('click', (event) => {
+    // Kolla om man klickade på ett LI-element
+    if (event.target.tagName === 'LI') 
+    {event.target.classList.toggle('done');}// markera eller avmarkera
+  });
+</script>
+</body>
+</html>

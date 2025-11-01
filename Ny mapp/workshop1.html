@@ -1,0 +1,30 @@
+<h1>Min To-Do-lista</h1>
+<input id="taskInput" placeholder="Skriv en uppgift" aria label ="Skriv en uppgift">
+<button id="addBtn">Lägg till</button>
+<ul id="taskList"></ul>
+<script>
+    const input = document.getElementById("taskInput");
+    const button = document.getElementById("addBtn");
+    const list = document.getElementById("taskList");
+
+    //När man klickar på knappen
+    button.addEventListener("click", (event)=> {
+        const text = input.value.trim();
+        if(text ==="") return;
+
+        const li = document.createElement("li");
+        li.textContent = text;
+        list.appendChild(li);
+        input.value = "";
+    });
+    
+    //När man klickar på en punkt i listan -->markera som klar
+    list.addEventListener("click", (e) => {
+        if(e.target.tagName === "LI") {
+            e.target.classList.toggle("done");
+
+        }
+    });
+
+</script>
+<!-- <script src="workshop1.js"></script> -->

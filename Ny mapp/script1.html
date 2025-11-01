@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <div id="quote"></div>
+  <script>
+  fetch("https://api.quotable.io/random")
+    .then(response => response.json())
+    .then(data => {
+      console.log(data.content);
+      document.getElementById("quote").textContent = data.content;
+      // Visa citatet på sidan
+    })
+  .catch(error => console.error("Fel vid hämtning:", error));
+  </script>
+</body>
+</html>
