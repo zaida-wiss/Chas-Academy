@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="outer">
+        <div id="inner">
+            <button id="btn">Klicka mig</button>
+        </div>
+    </div>
+
+<script>
+    const ytterdiv = document.getElementById("outer");
+    const innerdiv = document.getElementById("inner");
+    const btn= document.getElementById("btn");
+
+    ytterdiv.addEventListener("click", (event) => {
+        console.log("du klickade på den yttre diven")});
+    innerdiv.addEventListener("click", (event) =>
+    {console.log("du klickade på den inre diven")});
+    btn.addEventListener("click", (event) =>
+    {event.stopPropagation();
+    console.log("du klickade på knappen")});
+
+</script>
+
+</body>
+</html>
